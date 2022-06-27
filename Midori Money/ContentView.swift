@@ -11,10 +11,10 @@ struct ContentView: View {
     
     @State private var checkAmount = 0.0
     @State private var numOfPeople = 2
-    @State private var tipPercentage = 1
+    @State private var tipPercentage = 20
     @FocusState private var amountIsFocused: Bool
     
-    let tipPercentages = [5, 10, 15, 20]
+    let tipPercentages = [5, 10, 15, 20, 0]
     
     var totalPerPerson: Double {
         let peopleCount = Double(numOfPeople + 2)
